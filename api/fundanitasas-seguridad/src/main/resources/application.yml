@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: fundanitasas-seguridad
+  profiles:
+    active: local
+  cloud:
+    config:
+      enabled: false
+  security:
+   user:
+      name: admin
+      password: 123456
+
+server:
+  port: 8090
+  servlet:
+    context-path: /fundanitasas 
+    
