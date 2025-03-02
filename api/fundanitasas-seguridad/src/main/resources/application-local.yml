@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:6543/postgres
+    username: postgres.aseqwraeapulbkkutpfs
+    password: Administrador*2025
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

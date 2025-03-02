@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: fundanitasas-seguridad
+  profiles:
+    active: local
+  cloud:
+    config:
+      enabled: false
+  security:
+   user:
+      name: admin
+      password: 123456
+server:
+  port: 8090
+  servlet:
+    context-path: /fundanitasas
+seguridad:
+  tiempo-max-inactividad: 30  # Tiempo en minutos antes de cerrar sesión por inactividad
+  secret-key: claveSecretaSuperSeguraParaJWT123456789012
+  patron-expiracion: 3600000 # 1 hora
